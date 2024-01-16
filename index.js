@@ -47,6 +47,10 @@ app.use('/comment',commentController)
 app.use('/upload',uploadController)
 
 //connect backend app
+app.get("/ad",(req,res)=>{
+    res.send("hello")
+})
+
 app.listen(PORT,()=>{
     console.log(`server running on ${PORT}`)
 })
